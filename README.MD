@@ -1,7 +1,7 @@
 # AWS Cloud Deployment Kit Demos
 A repository to hold my [AWS Cloud Deployment Kit](https://aws.amazon.com/cdk/) Demos in python.
 
-![](https://raw.githubusercontent.com/miztiik/cdk-demos/master/images/cdk-compiles-cfn.png)
+![](images/cdk-compiles-cfn.png)
 
 Check out the individual directories for the various demos.
 
