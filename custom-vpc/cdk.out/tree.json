@@ -1,0 +1,133 @@
+{
+  "version": "tree-0.1",
+  "tree": {
+    "id": "App",
+    "path": "",
+    "children": [
+      {
+        "id": "Tree",
+        "path": "Tree"
+      },
+      {
+        "id": "custom-vpc",
+        "path": "custom-vpc",
+        "children": [
+          {
+            "id": "MyVpc",
+            "path": "custom-vpc/MyVpc",
+            "children": [
+              {
+                "id": "Resource",
+                "path": "custom-vpc/MyVpc/Resource"
+              },
+              {
+                "id": "publicSubnet1",
+                "path": "custom-vpc/MyVpc/publicSubnet1",
+                "children": [
+                  {
+                    "id": "Subnet",
+                    "path": "custom-vpc/MyVpc/publicSubnet1/Subnet"
+                  },
+                  {
+                    "id": "Acl",
+                    "path": "custom-vpc/MyVpc/publicSubnet1/Acl"
+                  },
+                  {
+                    "id": "RouteTable",
+                    "path": "custom-vpc/MyVpc/publicSubnet1/RouteTable"
+                  },
+                  {
+                    "id": "RouteTableAssociation",
+                    "path": "custom-vpc/MyVpc/publicSubnet1/RouteTableAssociation"
+                  },
+                  {
+                    "id": "DefaultRoute",
+                    "path": "custom-vpc/MyVpc/publicSubnet1/DefaultRoute"
+                  }
+                ]
+              },
+              {
+                "id": "publicSubnet2",
+                "path": "custom-vpc/MyVpc/publicSubnet2",
+                "children": [
+                  {
+                    "id": "Subnet",
+                    "path": "custom-vpc/MyVpc/publicSubnet2/Subnet"
+                  },
+                  {
+                    "id": "Acl",
+                    "path": "custom-vpc/MyVpc/publicSubnet2/Acl"
+                  },
+                  {
+                    "id": "RouteTable",
+                    "path": "custom-vpc/MyVpc/publicSubnet2/RouteTable"
+                  },
+                  {
+                    "id": "RouteTableAssociation",
+                    "path": "custom-vpc/MyVpc/publicSubnet2/RouteTableAssociation"
+                  },
+                  {
+                    "id": "DefaultRoute",
+                    "path": "custom-vpc/MyVpc/publicSubnet2/DefaultRoute"
+                  }
+                ]
+              },
+              {
+                "id": "privateSubnet1",
+                "path": "custom-vpc/MyVpc/privateSubnet1",
+                "children": [
+                  {
+                    "id": "Subnet",
+                    "path": "custom-vpc/MyVpc/privateSubnet1/Subnet"
+                  },
+                  {
+                    "id": "Acl",
+                    "path": "custom-vpc/MyVpc/privateSubnet1/Acl"
+                  },
+                  {
+                    "id": "RouteTable",
+                    "path": "custom-vpc/MyVpc/privateSubnet1/RouteTable"
+                  },
+                  {
+                    "id": "RouteTableAssociation",
+                    "path": "custom-vpc/MyVpc/privateSubnet1/RouteTableAssociation"
+                  }
+                ]
+              },
+              {
+                "id": "privateSubnet2",
+                "path": "custom-vpc/MyVpc/privateSubnet2",
+                "children": [
+                  {
+                    "id": "Subnet",
+                    "path": "custom-vpc/MyVpc/privateSubnet2/Subnet"
+                  },
+                  {
+                    "id": "Acl",
+                    "path": "custom-vpc/MyVpc/privateSubnet2/Acl"
+                  },
+                  {
+                    "id": "RouteTable",
+                    "path": "custom-vpc/MyVpc/privateSubnet2/RouteTable"
+                  },
+                  {
+                    "id": "RouteTableAssociation",
+                    "path": "custom-vpc/MyVpc/privateSubnet2/RouteTableAssociation"
+                  }
+                ]
+              },
+              {
+                "id": "IGW",
+                "path": "custom-vpc/MyVpc/IGW"
+              },
+              {
+                "id": "VPCGW",
+                "path": "custom-vpc/MyVpc/VPCGW"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

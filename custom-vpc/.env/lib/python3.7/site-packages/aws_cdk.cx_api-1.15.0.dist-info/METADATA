@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: aws-cdk.cx-api
+Version: 1.15.0
+Summary: Cloud executable protocol
+Home-page: https://github.com/aws/aws-cdk
+Author: Amazon Web Services
+License: UNKNOWN
+Project-URL: Source, https://github.com/aws/aws-cdk.git
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: jsii (~=0.19.0)
+Requires-Dist: publication (>=0.0.3)
+
+## Cloud Executable protocol
+
+<html></html>---
+
+
+![Stability: Experimental](https://img.shields.io/badge/stability-Experimental-important.svg?style=for-the-badge)
+
+> **This is a *developer preview* (public beta) module. Releases might lack important features and might have
+> future breaking changes.**
+>
+> This API is still under active development and subject to non-backward
+> compatible changes or removal in any future version. Use of the API is not recommended in production
+> environments. Experimental APIs are not subject to the Semantic Versioning model.
+
+---
+<html></html>
+
+This module is part of the [AWS Cloud Development Kit](https://github.com/aws/aws-cdk) project.
+
+

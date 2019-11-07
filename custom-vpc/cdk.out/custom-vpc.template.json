@@ -1,0 +1,390 @@
+{
+  "Resources": {
+    "MyVpcF9F0CA6F": {
+      "Type": "AWS::EC2::VPC",
+      "Properties": {
+        "CidrBlock": "10.13.0.0/21",
+        "EnableDnsHostnames": true,
+        "EnableDnsSupport": true,
+        "InstanceTenancy": "default",
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "custom-vpc/MyVpc"
+          },
+          {
+            "Key": "Owner",
+            "Value": "KonStone"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "custom-vpc/MyVpc/Resource"
+      }
+    },
+    "MyVpcpublicSubnet1Subnet75CA916A": {
+      "Type": "AWS::EC2::Subnet",
+      "Properties": {
+        "CidrBlock": "10.13.0.0/24",
+        "VpcId": {
+          "Ref": "MyVpcF9F0CA6F"
+        },
+        "AvailabilityZone": {
+          "Fn::Select": [
+            0,
+            {
+              "Fn::GetAZs": ""
+            }
+          ]
+        },
+        "MapPublicIpOnLaunch": true,
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "custom-vpc/MyVpc/publicSubnet1"
+          },
+          {
+            "Key": "Owner",
+            "Value": "KonStone"
+          },
+          {
+            "Key": "aws-cdk:subnet-name",
+            "Value": "public"
+          },
+          {
+            "Key": "aws-cdk:subnet-type",
+            "Value": "Public"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "custom-vpc/MyVpc/publicSubnet1/Subnet"
+      }
+    },
+    "MyVpcpublicSubnet1RouteTable2E0CCC3A": {
+      "Type": "AWS::EC2::RouteTable",
+      "Properties": {
+        "VpcId": {
+          "Ref": "MyVpcF9F0CA6F"
+        },
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "custom-vpc/MyVpc/publicSubnet1"
+          },
+          {
+            "Key": "Owner",
+            "Value": "KonStone"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "custom-vpc/MyVpc/publicSubnet1/RouteTable"
+      }
+    },
+    "MyVpcpublicSubnet1RouteTableAssociation6D520F26": {
+      "Type": "AWS::EC2::SubnetRouteTableAssociation",
+      "Properties": {
+        "RouteTableId": {
+          "Ref": "MyVpcpublicSubnet1RouteTable2E0CCC3A"
+        },
+        "SubnetId": {
+          "Ref": "MyVpcpublicSubnet1Subnet75CA916A"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "custom-vpc/MyVpc/publicSubnet1/RouteTableAssociation"
+      }
+    },
+    "MyVpcpublicSubnet1DefaultRoute1C88571A": {
+      "Type": "AWS::EC2::Route",
+      "Properties": {
+        "RouteTableId": {
+          "Ref": "MyVpcpublicSubnet1RouteTable2E0CCC3A"
+        },
+        "DestinationCidrBlock": "0.0.0.0/0",
+        "GatewayId": {
+          "Ref": "MyVpcIGW5C4A4F63"
+        }
+      },
+      "DependsOn": [
+        "MyVpcVPCGW488ACE0D"
+      ],
+      "Metadata": {
+        "aws:cdk:path": "custom-vpc/MyVpc/publicSubnet1/DefaultRoute"
+      }
+    },
+    "MyVpcpublicSubnet2Subnet87EBD23B": {
+      "Type": "AWS::EC2::Subnet",
+      "Properties": {
+        "CidrBlock": "10.13.1.0/24",
+        "VpcId": {
+          "Ref": "MyVpcF9F0CA6F"
+        },
+        "AvailabilityZone": {
+          "Fn::Select": [
+            1,
+            {
+              "Fn::GetAZs": ""
+            }
+          ]
+        },
+        "MapPublicIpOnLaunch": true,
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "custom-vpc/MyVpc/publicSubnet2"
+          },
+          {
+            "Key": "Owner",
+            "Value": "KonStone"
+          },
+          {
+            "Key": "aws-cdk:subnet-name",
+            "Value": "public"
+          },
+          {
+            "Key": "aws-cdk:subnet-type",
+            "Value": "Public"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "custom-vpc/MyVpc/publicSubnet2/Subnet"
+      }
+    },
+    "MyVpcpublicSubnet2RouteTable18FD0DBF": {
+      "Type": "AWS::EC2::RouteTable",
+      "Properties": {
+        "VpcId": {
+          "Ref": "MyVpcF9F0CA6F"
+        },
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "custom-vpc/MyVpc/publicSubnet2"
+          },
+          {
+            "Key": "Owner",
+            "Value": "KonStone"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "custom-vpc/MyVpc/publicSubnet2/RouteTable"
+      }
+    },
+    "MyVpcpublicSubnet2RouteTableAssociation2BD1A73B": {
+      "Type": "AWS::EC2::SubnetRouteTableAssociation",
+      "Properties": {
+        "RouteTableId": {
+          "Ref": "MyVpcpublicSubnet2RouteTable18FD0DBF"
+        },
+        "SubnetId": {
+          "Ref": "MyVpcpublicSubnet2Subnet87EBD23B"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "custom-vpc/MyVpc/publicSubnet2/RouteTableAssociation"
+      }
+    },
+    "MyVpcpublicSubnet2DefaultRoute203C8627": {
+      "Type": "AWS::EC2::Route",
+      "Properties": {
+        "RouteTableId": {
+          "Ref": "MyVpcpublicSubnet2RouteTable18FD0DBF"
+        },
+        "DestinationCidrBlock": "0.0.0.0/0",
+        "GatewayId": {
+          "Ref": "MyVpcIGW5C4A4F63"
+        }
+      },
+      "DependsOn": [
+        "MyVpcVPCGW488ACE0D"
+      ],
+      "Metadata": {
+        "aws:cdk:path": "custom-vpc/MyVpc/publicSubnet2/DefaultRoute"
+      }
+    },
+    "MyVpcprivateSubnet1Subnet3E5A1110": {
+      "Type": "AWS::EC2::Subnet",
+      "Properties": {
+        "CidrBlock": "10.13.2.0/24",
+        "VpcId": {
+          "Ref": "MyVpcF9F0CA6F"
+        },
+        "AvailabilityZone": {
+          "Fn::Select": [
+            0,
+            {
+              "Fn::GetAZs": ""
+            }
+          ]
+        },
+        "MapPublicIpOnLaunch": false,
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "custom-vpc/MyVpc/privateSubnet1"
+          },
+          {
+            "Key": "Owner",
+            "Value": "KonStone"
+          },
+          {
+            "Key": "aws-cdk:subnet-name",
+            "Value": "private"
+          },
+          {
+            "Key": "aws-cdk:subnet-type",
+            "Value": "Isolated"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "custom-vpc/MyVpc/privateSubnet1/Subnet"
+      }
+    },
+    "MyVpcprivateSubnet1RouteTableCBD023BE": {
+      "Type": "AWS::EC2::RouteTable",
+      "Properties": {
+        "VpcId": {
+          "Ref": "MyVpcF9F0CA6F"
+        },
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "custom-vpc/MyVpc/privateSubnet1"
+          },
+          {
+            "Key": "Owner",
+            "Value": "KonStone"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "custom-vpc/MyVpc/privateSubnet1/RouteTable"
+      }
+    },
+    "MyVpcprivateSubnet1RouteTableAssociation260F1146": {
+      "Type": "AWS::EC2::SubnetRouteTableAssociation",
+      "Properties": {
+        "RouteTableId": {
+          "Ref": "MyVpcprivateSubnet1RouteTableCBD023BE"
+        },
+        "SubnetId": {
+          "Ref": "MyVpcprivateSubnet1Subnet3E5A1110"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "custom-vpc/MyVpc/privateSubnet1/RouteTableAssociation"
+      }
+    },
+    "MyVpcprivateSubnet2Subnet372894AA": {
+      "Type": "AWS::EC2::Subnet",
+      "Properties": {
+        "CidrBlock": "10.13.3.0/24",
+        "VpcId": {
+          "Ref": "MyVpcF9F0CA6F"
+        },
+        "AvailabilityZone": {
+          "Fn::Select": [
+            1,
+            {
+              "Fn::GetAZs": ""
+            }
+          ]
+        },
+        "MapPublicIpOnLaunch": false,
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "custom-vpc/MyVpc/privateSubnet2"
+          },
+          {
+            "Key": "Owner",
+            "Value": "KonStone"
+          },
+          {
+            "Key": "aws-cdk:subnet-name",
+            "Value": "private"
+          },
+          {
+            "Key": "aws-cdk:subnet-type",
+            "Value": "Isolated"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "custom-vpc/MyVpc/privateSubnet2/Subnet"
+      }
+    },
+    "MyVpcprivateSubnet2RouteTableB9EC50DF": {
+      "Type": "AWS::EC2::RouteTable",
+      "Properties": {
+        "VpcId": {
+          "Ref": "MyVpcF9F0CA6F"
+        },
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "custom-vpc/MyVpc/privateSubnet2"
+          },
+          {
+            "Key": "Owner",
+            "Value": "KonStone"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "custom-vpc/MyVpc/privateSubnet2/RouteTable"
+      }
+    },
+    "MyVpcprivateSubnet2RouteTableAssociationBC4A677C": {
+      "Type": "AWS::EC2::SubnetRouteTableAssociation",
+      "Properties": {
+        "RouteTableId": {
+          "Ref": "MyVpcprivateSubnet2RouteTableB9EC50DF"
+        },
+        "SubnetId": {
+          "Ref": "MyVpcprivateSubnet2Subnet372894AA"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "custom-vpc/MyVpc/privateSubnet2/RouteTableAssociation"
+      }
+    },
+    "MyVpcIGW5C4A4F63": {
+      "Type": "AWS::EC2::InternetGateway",
+      "Properties": {
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "custom-vpc/MyVpc"
+          },
+          {
+            "Key": "Owner",
+            "Value": "KonStone"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "custom-vpc/MyVpc/IGW"
+      }
+    },
+    "MyVpcVPCGW488ACE0D": {
+      "Type": "AWS::EC2::VPCGatewayAttachment",
+      "Properties": {
+        "VpcId": {
+          "Ref": "MyVpcF9F0CA6F"
+        },
+        "InternetGatewayId": {
+          "Ref": "MyVpcIGW5C4A4F63"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "custom-vpc/MyVpc/VPCGW"
+      }
+    }
+  }
+}

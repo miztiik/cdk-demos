@@ -1,0 +1,400 @@
+{
+  "version": "1.10.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "custom-vpc": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/us-east-1",
+      "properties": {
+        "templateFile": "custom-vpc.template.json"
+      },
+      "metadata": {
+        "/custom-vpc/MyVpc/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcF9F0CA6F",
+            "trace": [
+              "new Vpc (/private/var/folders/p1/k7383fss0nvfk4rm12tjsvlhr68wd0/T/jsii-kernel-Oa5ps5/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:262:25)",
+              "/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6992:49",
+              "Kernel._wrapSandboxCode (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7444:20)",
+              "Kernel._create (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6992:26)",
+              "Kernel.create (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6746:21)",
+              "KernelHost.processRequest (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6521:28)",
+              "KernelHost.run (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6464:14)",
+              "Immediate._onImmediate (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6467:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/custom-vpc/MyVpc/publicSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcpublicSubnet1Subnet75CA916A",
+            "trace": [
+              "new Subnet (/private/var/folders/p1/k7383fss0nvfk4rm12tjsvlhr68wd0/T/jsii-kernel-Oa5ps5/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:548:24)",
+              "new PublicSubnet (/private/var/folders/p1/k7383fss0nvfk4rm12tjsvlhr68wd0/T/jsii-kernel-Oa5ps5/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:642:9)",
+              "/private/var/folders/p1/k7383fss0nvfk4rm12tjsvlhr68wd0/T/jsii-kernel-Oa5ps5/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:477:42",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/private/var/folders/p1/k7383fss0nvfk4rm12tjsvlhr68wd0/T/jsii-kernel-Oa5ps5/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:461:32)",
+              "Vpc.createSubnets (/private/var/folders/p1/k7383fss0nvfk4rm12tjsvlhr68wd0/T/jsii-kernel-Oa5ps5/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:452:18)",
+              "new Vpc (/private/var/folders/p1/k7383fss0nvfk4rm12tjsvlhr68wd0/T/jsii-kernel-Oa5ps5/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:282:14)",
+              "/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6992:49",
+              "Kernel._wrapSandboxCode (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7444:20)",
+              "Kernel._create (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6992:26)",
+              "Kernel.create (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6746:21)",
+              "KernelHost.processRequest (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6521:28)",
+              "KernelHost.run (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6464:14)",
+              "Immediate._onImmediate (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6467:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/custom-vpc/MyVpc/publicSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcpublicSubnet1RouteTable2E0CCC3A",
+            "trace": [
+              "new Subnet (/private/var/folders/p1/k7383fss0nvfk4rm12tjsvlhr68wd0/T/jsii-kernel-Oa5ps5/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:563:23)",
+              "new PublicSubnet (/private/var/folders/p1/k7383fss0nvfk4rm12tjsvlhr68wd0/T/jsii-kernel-Oa5ps5/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:642:9)",
+              "/private/var/folders/p1/k7383fss0nvfk4rm12tjsvlhr68wd0/T/jsii-kernel-Oa5ps5/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:477:42",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/private/var/folders/p1/k7383fss0nvfk4rm12tjsvlhr68wd0/T/jsii-kernel-Oa5ps5/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:461:32)",
+              "Vpc.createSubnets (/private/var/folders/p1/k7383fss0nvfk4rm12tjsvlhr68wd0/T/jsii-kernel-Oa5ps5/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:452:18)",
+              "new Vpc (/private/var/folders/p1/k7383fss0nvfk4rm12tjsvlhr68wd0/T/jsii-kernel-Oa5ps5/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:282:14)",
+              "/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6992:49",
+              "Kernel._wrapSandboxCode (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7444:20)",
+              "Kernel._create (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6992:26)",
+              "Kernel.create (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6746:21)",
+              "KernelHost.processRequest (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6521:28)",
+              "KernelHost.run (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6464:14)",
+              "Immediate._onImmediate (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6467:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/custom-vpc/MyVpc/publicSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcpublicSubnet1RouteTableAssociation6D520F26",
+            "trace": [
+              "new Subnet (/private/var/folders/p1/k7383fss0nvfk4rm12tjsvlhr68wd0/T/jsii-kernel-Oa5ps5/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:568:9)",
+              "new PublicSubnet (/private/var/folders/p1/k7383fss0nvfk4rm12tjsvlhr68wd0/T/jsii-kernel-Oa5ps5/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:642:9)",
+              "/private/var/folders/p1/k7383fss0nvfk4rm12tjsvlhr68wd0/T/jsii-kernel-Oa5ps5/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:477:42",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/private/var/folders/p1/k7383fss0nvfk4rm12tjsvlhr68wd0/T/jsii-kernel-Oa5ps5/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:461:32)",
+              "Vpc.createSubnets (/private/var/folders/p1/k7383fss0nvfk4rm12tjsvlhr68wd0/T/jsii-kernel-Oa5ps5/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:452:18)",
+              "new Vpc (/private/var/folders/p1/k7383fss0nvfk4rm12tjsvlhr68wd0/T/jsii-kernel-Oa5ps5/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:282:14)",
+              "/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6992:49",
+              "Kernel._wrapSandboxCode (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7444:20)",
+              "Kernel._create (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6992:26)",
+              "Kernel.create (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6746:21)",
+              "KernelHost.processRequest (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6521:28)",
+              "KernelHost.run (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6464:14)",
+              "Immediate._onImmediate (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6467:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/custom-vpc/MyVpc/publicSubnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcpublicSubnet1DefaultRoute1C88571A",
+            "trace": [
+              "PublicSubnet.addDefaultInternetRoute (/private/var/folders/p1/k7383fss0nvfk4rm12tjsvlhr68wd0/T/jsii-kernel-Oa5ps5/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:588:23)",
+              "/private/var/folders/p1/k7383fss0nvfk4rm12tjsvlhr68wd0/T/jsii-kernel-Oa5ps5/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:293:30",
+              "Array.forEach (<anonymous>)",
+              "new Vpc (/private/var/folders/p1/k7383fss0nvfk4rm12tjsvlhr68wd0/T/jsii-kernel-Oa5ps5/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:292:32)",
+              "/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6992:49",
+              "Kernel._wrapSandboxCode (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7444:20)",
+              "Kernel._create (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6992:26)",
+              "Kernel.create (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6746:21)",
+              "KernelHost.processRequest (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6521:28)",
+              "KernelHost.run (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6464:14)",
+              "Immediate._onImmediate (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6467:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/custom-vpc/MyVpc/publicSubnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcpublicSubnet2Subnet87EBD23B",
+            "trace": [
+              "new Subnet (/private/var/folders/p1/k7383fss0nvfk4rm12tjsvlhr68wd0/T/jsii-kernel-Oa5ps5/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:548:24)",
+              "new PublicSubnet (/private/var/folders/p1/k7383fss0nvfk4rm12tjsvlhr68wd0/T/jsii-kernel-Oa5ps5/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:642:9)",
+              "/private/var/folders/p1/k7383fss0nvfk4rm12tjsvlhr68wd0/T/jsii-kernel-Oa5ps5/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:477:42",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/private/var/folders/p1/k7383fss0nvfk4rm12tjsvlhr68wd0/T/jsii-kernel-Oa5ps5/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:461:32)",
+              "Vpc.createSubnets (/private/var/folders/p1/k7383fss0nvfk4rm12tjsvlhr68wd0/T/jsii-kernel-Oa5ps5/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:452:18)",
+              "new Vpc (/private/var/folders/p1/k7383fss0nvfk4rm12tjsvlhr68wd0/T/jsii-kernel-Oa5ps5/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:282:14)",
+              "/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6992:49",
+              "Kernel._wrapSandboxCode (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7444:20)",
+              "Kernel._create (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6992:26)",
+              "Kernel.create (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6746:21)",
+              "KernelHost.processRequest (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6521:28)",
+              "KernelHost.run (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6464:14)",
+              "Immediate._onImmediate (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6467:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/custom-vpc/MyVpc/publicSubnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcpublicSubnet2RouteTable18FD0DBF",
+            "trace": [
+              "new Subnet (/private/var/folders/p1/k7383fss0nvfk4rm12tjsvlhr68wd0/T/jsii-kernel-Oa5ps5/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:563:23)",
+              "new PublicSubnet (/private/var/folders/p1/k7383fss0nvfk4rm12tjsvlhr68wd0/T/jsii-kernel-Oa5ps5/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:642:9)",
+              "/private/var/folders/p1/k7383fss0nvfk4rm12tjsvlhr68wd0/T/jsii-kernel-Oa5ps5/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:477:42",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/private/var/folders/p1/k7383fss0nvfk4rm12tjsvlhr68wd0/T/jsii-kernel-Oa5ps5/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:461:32)",
+              "Vpc.createSubnets (/private/var/folders/p1/k7383fss0nvfk4rm12tjsvlhr68wd0/T/jsii-kernel-Oa5ps5/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:452:18)",
+              "new Vpc (/private/var/folders/p1/k7383fss0nvfk4rm12tjsvlhr68wd0/T/jsii-kernel-Oa5ps5/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:282:14)",
+              "/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6992:49",
+              "Kernel._wrapSandboxCode (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7444:20)",
+              "Kernel._create (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6992:26)",
+              "Kernel.create (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6746:21)",
+              "KernelHost.processRequest (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6521:28)",
+              "KernelHost.run (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6464:14)",
+              "Immediate._onImmediate (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6467:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/custom-vpc/MyVpc/publicSubnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcpublicSubnet2RouteTableAssociation2BD1A73B",
+            "trace": [
+              "new Subnet (/private/var/folders/p1/k7383fss0nvfk4rm12tjsvlhr68wd0/T/jsii-kernel-Oa5ps5/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:568:9)",
+              "new PublicSubnet (/private/var/folders/p1/k7383fss0nvfk4rm12tjsvlhr68wd0/T/jsii-kernel-Oa5ps5/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:642:9)",
+              "/private/var/folders/p1/k7383fss0nvfk4rm12tjsvlhr68wd0/T/jsii-kernel-Oa5ps5/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:477:42",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/private/var/folders/p1/k7383fss0nvfk4rm12tjsvlhr68wd0/T/jsii-kernel-Oa5ps5/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:461:32)",
+              "Vpc.createSubnets (/private/var/folders/p1/k7383fss0nvfk4rm12tjsvlhr68wd0/T/jsii-kernel-Oa5ps5/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:452:18)",
+              "new Vpc (/private/var/folders/p1/k7383fss0nvfk4rm12tjsvlhr68wd0/T/jsii-kernel-Oa5ps5/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:282:14)",
+              "/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6992:49",
+              "Kernel._wrapSandboxCode (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7444:20)",
+              "Kernel._create (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6992:26)",
+              "Kernel.create (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6746:21)",
+              "KernelHost.processRequest (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6521:28)",
+              "KernelHost.run (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6464:14)",
+              "Immediate._onImmediate (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6467:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/custom-vpc/MyVpc/publicSubnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcpublicSubnet2DefaultRoute203C8627",
+            "trace": [
+              "PublicSubnet.addDefaultInternetRoute (/private/var/folders/p1/k7383fss0nvfk4rm12tjsvlhr68wd0/T/jsii-kernel-Oa5ps5/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:588:23)",
+              "/private/var/folders/p1/k7383fss0nvfk4rm12tjsvlhr68wd0/T/jsii-kernel-Oa5ps5/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:293:30",
+              "Array.forEach (<anonymous>)",
+              "new Vpc (/private/var/folders/p1/k7383fss0nvfk4rm12tjsvlhr68wd0/T/jsii-kernel-Oa5ps5/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:292:32)",
+              "/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6992:49",
+              "Kernel._wrapSandboxCode (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7444:20)",
+              "Kernel._create (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6992:26)",
+              "Kernel.create (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6746:21)",
+              "KernelHost.processRequest (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6521:28)",
+              "KernelHost.run (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6464:14)",
+              "Immediate._onImmediate (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6467:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/custom-vpc/MyVpc/privateSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcprivateSubnet1Subnet3E5A1110",
+            "trace": [
+              "new Subnet (/private/var/folders/p1/k7383fss0nvfk4rm12tjsvlhr68wd0/T/jsii-kernel-Oa5ps5/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:548:24)",
+              "new PrivateSubnet (/private/var/folders/p1/k7383fss0nvfk4rm12tjsvlhr68wd0/T/jsii-kernel-Oa5ps5/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:669:9)",
+              "/private/var/folders/p1/k7383fss0nvfk4rm12tjsvlhr68wd0/T/jsii-kernel-Oa5ps5/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:487:44",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/private/var/folders/p1/k7383fss0nvfk4rm12tjsvlhr68wd0/T/jsii-kernel-Oa5ps5/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:461:32)",
+              "Vpc.createSubnets (/private/var/folders/p1/k7383fss0nvfk4rm12tjsvlhr68wd0/T/jsii-kernel-Oa5ps5/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:452:18)",
+              "new Vpc (/private/var/folders/p1/k7383fss0nvfk4rm12tjsvlhr68wd0/T/jsii-kernel-Oa5ps5/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:282:14)",
+              "/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6992:49",
+              "Kernel._wrapSandboxCode (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7444:20)",
+              "Kernel._create (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6992:26)",
+              "Kernel.create (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6746:21)",
+              "KernelHost.processRequest (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6521:28)",
+              "KernelHost.run (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6464:14)",
+              "Immediate._onImmediate (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6467:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/custom-vpc/MyVpc/privateSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcprivateSubnet1RouteTableCBD023BE",
+            "trace": [
+              "new Subnet (/private/var/folders/p1/k7383fss0nvfk4rm12tjsvlhr68wd0/T/jsii-kernel-Oa5ps5/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:563:23)",
+              "new PrivateSubnet (/private/var/folders/p1/k7383fss0nvfk4rm12tjsvlhr68wd0/T/jsii-kernel-Oa5ps5/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:669:9)",
+              "/private/var/folders/p1/k7383fss0nvfk4rm12tjsvlhr68wd0/T/jsii-kernel-Oa5ps5/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:487:44",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/private/var/folders/p1/k7383fss0nvfk4rm12tjsvlhr68wd0/T/jsii-kernel-Oa5ps5/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:461:32)",
+              "Vpc.createSubnets (/private/var/folders/p1/k7383fss0nvfk4rm12tjsvlhr68wd0/T/jsii-kernel-Oa5ps5/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:452:18)",
+              "new Vpc (/private/var/folders/p1/k7383fss0nvfk4rm12tjsvlhr68wd0/T/jsii-kernel-Oa5ps5/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:282:14)",
+              "/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6992:49",
+              "Kernel._wrapSandboxCode (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7444:20)",
+              "Kernel._create (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6992:26)",
+              "Kernel.create (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6746:21)",
+              "KernelHost.processRequest (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6521:28)",
+              "KernelHost.run (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6464:14)",
+              "Immediate._onImmediate (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6467:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/custom-vpc/MyVpc/privateSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcprivateSubnet1RouteTableAssociation260F1146",
+            "trace": [
+              "new Subnet (/private/var/folders/p1/k7383fss0nvfk4rm12tjsvlhr68wd0/T/jsii-kernel-Oa5ps5/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:568:9)",
+              "new PrivateSubnet (/private/var/folders/p1/k7383fss0nvfk4rm12tjsvlhr68wd0/T/jsii-kernel-Oa5ps5/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:669:9)",
+              "/private/var/folders/p1/k7383fss0nvfk4rm12tjsvlhr68wd0/T/jsii-kernel-Oa5ps5/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:487:44",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/private/var/folders/p1/k7383fss0nvfk4rm12tjsvlhr68wd0/T/jsii-kernel-Oa5ps5/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:461:32)",
+              "Vpc.createSubnets (/private/var/folders/p1/k7383fss0nvfk4rm12tjsvlhr68wd0/T/jsii-kernel-Oa5ps5/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:452:18)",
+              "new Vpc (/private/var/folders/p1/k7383fss0nvfk4rm12tjsvlhr68wd0/T/jsii-kernel-Oa5ps5/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:282:14)",
+              "/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6992:49",
+              "Kernel._wrapSandboxCode (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7444:20)",
+              "Kernel._create (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6992:26)",
+              "Kernel.create (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6746:21)",
+              "KernelHost.processRequest (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6521:28)",
+              "KernelHost.run (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6464:14)",
+              "Immediate._onImmediate (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6467:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/custom-vpc/MyVpc/privateSubnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcprivateSubnet2Subnet372894AA",
+            "trace": [
+              "new Subnet (/private/var/folders/p1/k7383fss0nvfk4rm12tjsvlhr68wd0/T/jsii-kernel-Oa5ps5/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:548:24)",
+              "new PrivateSubnet (/private/var/folders/p1/k7383fss0nvfk4rm12tjsvlhr68wd0/T/jsii-kernel-Oa5ps5/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:669:9)",
+              "/private/var/folders/p1/k7383fss0nvfk4rm12tjsvlhr68wd0/T/jsii-kernel-Oa5ps5/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:487:44",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/private/var/folders/p1/k7383fss0nvfk4rm12tjsvlhr68wd0/T/jsii-kernel-Oa5ps5/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:461:32)",
+              "Vpc.createSubnets (/private/var/folders/p1/k7383fss0nvfk4rm12tjsvlhr68wd0/T/jsii-kernel-Oa5ps5/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:452:18)",
+              "new Vpc (/private/var/folders/p1/k7383fss0nvfk4rm12tjsvlhr68wd0/T/jsii-kernel-Oa5ps5/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:282:14)",
+              "/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6992:49",
+              "Kernel._wrapSandboxCode (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7444:20)",
+              "Kernel._create (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6992:26)",
+              "Kernel.create (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6746:21)",
+              "KernelHost.processRequest (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6521:28)",
+              "KernelHost.run (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6464:14)",
+              "Immediate._onImmediate (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6467:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/custom-vpc/MyVpc/privateSubnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcprivateSubnet2RouteTableB9EC50DF",
+            "trace": [
+              "new Subnet (/private/var/folders/p1/k7383fss0nvfk4rm12tjsvlhr68wd0/T/jsii-kernel-Oa5ps5/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:563:23)",
+              "new PrivateSubnet (/private/var/folders/p1/k7383fss0nvfk4rm12tjsvlhr68wd0/T/jsii-kernel-Oa5ps5/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:669:9)",
+              "/private/var/folders/p1/k7383fss0nvfk4rm12tjsvlhr68wd0/T/jsii-kernel-Oa5ps5/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:487:44",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/private/var/folders/p1/k7383fss0nvfk4rm12tjsvlhr68wd0/T/jsii-kernel-Oa5ps5/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:461:32)",
+              "Vpc.createSubnets (/private/var/folders/p1/k7383fss0nvfk4rm12tjsvlhr68wd0/T/jsii-kernel-Oa5ps5/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:452:18)",
+              "new Vpc (/private/var/folders/p1/k7383fss0nvfk4rm12tjsvlhr68wd0/T/jsii-kernel-Oa5ps5/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:282:14)",
+              "/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6992:49",
+              "Kernel._wrapSandboxCode (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7444:20)",
+              "Kernel._create (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6992:26)",
+              "Kernel.create (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6746:21)",
+              "KernelHost.processRequest (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6521:28)",
+              "KernelHost.run (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6464:14)",
+              "Immediate._onImmediate (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6467:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/custom-vpc/MyVpc/privateSubnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcprivateSubnet2RouteTableAssociationBC4A677C",
+            "trace": [
+              "new Subnet (/private/var/folders/p1/k7383fss0nvfk4rm12tjsvlhr68wd0/T/jsii-kernel-Oa5ps5/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:568:9)",
+              "new PrivateSubnet (/private/var/folders/p1/k7383fss0nvfk4rm12tjsvlhr68wd0/T/jsii-kernel-Oa5ps5/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:669:9)",
+              "/private/var/folders/p1/k7383fss0nvfk4rm12tjsvlhr68wd0/T/jsii-kernel-Oa5ps5/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:487:44",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/private/var/folders/p1/k7383fss0nvfk4rm12tjsvlhr68wd0/T/jsii-kernel-Oa5ps5/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:461:32)",
+              "Vpc.createSubnets (/private/var/folders/p1/k7383fss0nvfk4rm12tjsvlhr68wd0/T/jsii-kernel-Oa5ps5/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:452:18)",
+              "new Vpc (/private/var/folders/p1/k7383fss0nvfk4rm12tjsvlhr68wd0/T/jsii-kernel-Oa5ps5/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:282:14)",
+              "/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6992:49",
+              "Kernel._wrapSandboxCode (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7444:20)",
+              "Kernel._create (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6992:26)",
+              "Kernel.create (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6746:21)",
+              "KernelHost.processRequest (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6521:28)",
+              "KernelHost.run (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6464:14)",
+              "Immediate._onImmediate (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6467:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/custom-vpc/MyVpc/IGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcIGW5C4A4F63",
+            "trace": [
+              "new Vpc (/private/var/folders/p1/k7383fss0nvfk4rm12tjsvlhr68wd0/T/jsii-kernel-Oa5ps5/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:286:25)",
+              "/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6992:49",
+              "Kernel._wrapSandboxCode (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7444:20)",
+              "Kernel._create (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6992:26)",
+              "Kernel.create (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6746:21)",
+              "KernelHost.processRequest (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6521:28)",
+              "KernelHost.run (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6464:14)",
+              "Immediate._onImmediate (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6467:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/custom-vpc/MyVpc/VPCGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcVPCGW488ACE0D",
+            "trace": [
+              "new Vpc (/private/var/folders/p1/k7383fss0nvfk4rm12tjsvlhr68wd0/T/jsii-kernel-Oa5ps5/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:288:25)",
+              "/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6992:49",
+              "Kernel._wrapSandboxCode (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7444:20)",
+              "Kernel._create (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6992:26)",
+              "Kernel.create (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6746:21)",
+              "KernelHost.processRequest (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6521:28)",
+              "KernelHost.run (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6464:14)",
+              "Immediate._onImmediate (/Users/nks/Documents/nks/personal/git-repos/cdk-demos/custom-vpc/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:6467:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "runtime": {
+    "libraries": {
+      "@aws-cdk/cx-api": "1.15.0",
+      "@aws-cdk/core": "1.15.0",
+      "@aws-cdk/region-info": "1.15.0",
+      "@aws-cdk/aws-iam": "1.15.0",
+      "@aws-cdk/aws-cloudwatch": "1.15.0",
+      "@aws-cdk/aws-kms": "1.15.0",
+      "@aws-cdk/aws-ssm": "1.15.0",
+      "@aws-cdk/aws-ec2": "1.15.0",
+      "jsii-runtime": "Python/3.7.4"
+    }
+  }
+}
